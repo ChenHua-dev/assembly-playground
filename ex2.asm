@@ -1,4 +1,4 @@
-global main
+global _start
 
 section .data
     msg db "Hello, world!", 0x0a    ; 0x0a means new line

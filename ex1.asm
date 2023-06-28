@@ -6,4 +6,4 @@ _start:
     int 0x80    ; interrupt, processor transfer control to an interrupt 
                 ; handler, 0x80 interrupt handler fo system call
 
-                ; ./ex1, then echo $? should print 42
+                ; ./ex1, then echo $? should print 42 - 29 = 13
