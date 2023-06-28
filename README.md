@@ -1,6 +1,4 @@
-# assembly-playground
-
-## My assembly learning playground
+# My assembly-playground
 
 ### some helpful resources to get started
 
