@@ -10,5 +10,8 @@ clean:
 %.o: %.asm
 	nasm -f elf64 $^
 
+#%: %.o
+#	cc -o $@ $^
+
 %: %.o
-	cc -o $@ $^
+	ld -o $@ $^
