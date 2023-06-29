@@ -2,10 +2,10 @@ global _start
 
 section .data
     msg db "Hello, world!", 0x0a    ; 0x0a means new line
-    len equ $ - msg                 ; len of string = location(start of str) - location(after str)
+    len equ $ - msg                 ; len of string = location(after str) - location(start of str) 
 
 section .text
-_start:                               ; create system call that writes string to stdout
+_start:             ; create system call that writes string to stdout
     mov eax, 4      ; 4 means sys_write system call
     mov ebx, 1      ; 1 stdout file descriptor
     mov ecx, msg    ; ecx hold string pointer, i.e. bytes to write
